@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-tesk-3</title>
+</head>
+<body>
+    <form >
+        <div style="display: flex;">
+        1st Number :
+        <input id="one" type="number"  >
+        </div>
+        <div style="display: flex;">
+        2nd Number :
+        <input id="two" type="number" >
+        </div>
+        <div>
+        <button onclick="mul()">Multiply</button>
+        <button onclick="div()">Divide</button>
+        </div>
+    </form>
+    <script>
+        function mul(num1,num2) {
+            var num1=document.getElementById("one").value;
+            var num2=document.getElementById("two").value;
+            var result;
+            result=num1*num2;
+            alert("The Result is :"+result); 
+        }
+        function div(num1,num2) {
+            var num1=document.getElementById("one").value;
+            var num2=document.getElementById("two").value;
+            var result;
+            result=num1/num2;
+            alert("The Result is :"+result); 
+        }
+    </script>
+</body>
+</html>
